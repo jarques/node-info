@@ -22,7 +22,11 @@ var NodeInfo = {
 
   load_page: function(e){
     var path = $(e).attr("href");
-    $("#info").load(path);
+    //$("#info").load(path);
+    $.getJSON(path,function(json){
+        // inject contents in document body
+        $('#info').jsonView(json);
+      })
   }
 
 }
