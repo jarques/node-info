@@ -3,7 +3,7 @@ var http    = require('http'),
     url     = require('url'),
     express = require('express'),
     port    = 8080,
-    app     = express.createServer();
+    app     = express();
 
 var __dirname = 'public';
 
